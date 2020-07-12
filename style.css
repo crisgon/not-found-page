@@ -90,13 +90,25 @@ img {
 }
 
 @media (max-width: 500px) {
+  .header {
+    padding: 10px 2.5rem;
+  }
   .content {
     width: 100%;
     flex-direction: column;
+    padding: 0 2.5rem;
+    box-sizing: border-box;
   }
 
   .notfound-message {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .notfound-message h2 {
+    font-size: 48px;
+    text-align: left;
   }
 
   .notfound-image {
@@ -105,5 +117,9 @@ img {
 
   .notfound-image img {
     max-width: 80%;
+  }
+
+  .content .btn {
+    align-self: flex-start;
   }
 }
